@@ -1,0 +1,11 @@
+<form bindsubmit="register">
+<input placeholder="请输入用户名" name="inpName"></input>
+<input placeholder="请输入密码" password name="inpPwd"></input>
+<button form-type="submit" type="primary">注册</button>
+
+
+</form>
+
+<view style="color:#888;margin:18rpx;">已有账号？</view>
+<navigator url="/pages/login/login" style="font-size:40rpx;">去登录</navigator>
+

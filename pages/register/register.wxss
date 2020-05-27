@@ -1,0 +1,6 @@
+input{
+  height:100rpx;
+  padding-left:10rpx;
+  margin-bottom:10rpx;
+  background-color: #fff;
+}

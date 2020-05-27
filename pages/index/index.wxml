@@ -1,0 +1,119 @@
+<view class="top">
+	<swiper autoplay class="top-swiper" interval="2500">
+		<block wx:for="{{banner}}" wx:key="{{item.id}}">
+			<swiper-item class="swiper-item">
+				<image src="{{item.img}}"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+<!-- 菜单选择 -->
+
+<view>
+	<swiper class="menu" indicator-dots>
+		<swiper-item class="menu-swiper-item">
+
+			<view class="menu-list">
+				<view class="menu-item">
+					<image src="/imgs/index/icon_1.jpg"></image>
+					<text>新商家</text>
+				</view>
+				
+				<view class="menu-item">
+					<image src="/imgs/index/icon_2.jpg"></image>
+					<text>新商家</text>
+				</view>
+				<view class="menu-item">
+					<image src="/imgs/index/icon_3.jpg"></image>
+					<text>新商家</text>
+				</view>
+				<view class="menu-item">
+					<image src="/imgs/index/icon_4.jpg"></image>
+					<text>新商家</text>
+				</view>
+			</view>
+			<view class="menu-list">
+			
+				<view class="menu-item">
+					<image src="/imgs/index/icon_5.jpg"></image>
+					<text>新商家</text>
+				</view>
+				<view class="menu-item">
+					<image src="/imgs/index/icon_6.jpg"></image>
+					<text>新商家</text>
+				</view>
+				<view class="menu-item">
+					<image src="/imgs/index/icon_7.jpg"></image>
+					<text>新商家</text>
+				</view>
+				<view class="menu-item">
+					<image src="/imgs/index/icon_8.jpg"></image>
+					<text>新商家</text>
+				</view>
+			</view>
+		</swiper-item>
+    
+		<swiper-item class="menu-swiper-item">
+
+			<view class="menu-list">
+
+				<view class="menu-item">
+					<image src="/imgs/index/icon_9.jpg"></image>
+					<text>新商家</text>
+				</view>
+				<view class="menu-item">
+					<image src="/imgs/index/icon_10.jpg"></image>
+					<text>新商家</text>
+				</view>
+				<view class="menu-item">
+					<image src="/imgs/index/icon_11.jpg"></image>
+					<text>新商家</text>
+				</view>
+				<view class="menu-item">
+					<image src="/imgs/index/icon_12.jpg"></image>
+					<text>新商家</text>
+				</view>
+			</view>
+			<view class="menu-list">
+				<view class="menu-item">
+					<image src="/imgs/index/icon_13.jpg"></image>
+					<text>新商家</text>
+				</view>
+			
+				<view class="menu-item">
+					<image src="/imgs/index/icon_14.jpg"></image>
+					<text>新商家</text>
+				</view>
+				<view class="menu-item">
+					<image src="/imgs/index/icon_15.jpg"></image>
+					<text>新商家</text>
+				</view>
+				<view class="menu-item">
+					<image src="/imgs/index/icon_16.jpg"></image>
+					<text>新商家</text>
+				</view>
+			</view>
+		</swiper-item>
+
+	</swiper>
+</view>
+
+<!-- 优惠专区 -->
+
+<view class="hot">
+	<view class="hot-text">优惠专区</view>
+	<image src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3125464840,3044799355&fm=26&gp=0.jpg"></image>
+</view>
+
+<!-- 附近商家 -->
+<view class="hot">
+	<view class="hot-text">附近商家</view>
+	<view class="recommend">
+		<view class="recommend-card">
+			<view class="{{myIndex == 0? 'active': ''}}" bindtap="change" data-index="0">综合排序<text class="{{myIndex != 0? 'v': ''}}">↓</text></view>
+			<view class="{{myIndex == 1? 'active': ''}}" bindtap="change" data-index="1">销量最高<text class="{{myIndex != 1? 'v': ''}}">↓</text></view>
+			<view class="{{myIndex == 2? 'active': ''}}" bindtap="change" data-index="2">距离最近<text class="{{myIndex != 2? 'v': ''}}">↓</text></view>
+		</view>
+		<image src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1534422690,1120432942&fm=26&gp=0.jpg"></image>
+	</view>
+</view>

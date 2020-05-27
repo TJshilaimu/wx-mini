@@ -1,0 +1,7 @@
+<form bindsubmit="login">
+<input placeholder="请输入用户名" name="inpName"></input>
+<input placeholder="请输入密码" password name="inpPwd"></input>
+<button form-type="submit" type="primary">登录</button>
+
+
+</form>
