@@ -1,0 +1,26 @@
+<view class="content" wx:for="{{myShow}}" bindtap="detail" data-info="{{item._id}}">
+	<view class="con-top">
+		<view class="con-img">
+			<image src="{{item.user.avatarUrl}}"></image>
+		</view>
+		<view class="con-user">
+			<view class="con-name">{{item.user.nickName}}</view>
+			<view class="con-time">{{item.time}}</view>
+		</view>
+	</view>
+	<view class="speak">
+		<view class="speak-text">
+			{{item.text}}
+		</view>
+		<scroll-view scroll-x>
+			<view class="speak-img">
+
+        	<block wx:for="{{item.images}}">
+					<image src="{{item.path}}">
+				</image>
+        </block>
+			</view>
+
+		</scroll-view>
+	</view>
+</view>

@@ -1,0 +1,23 @@
+<form bindsubmit="submit">
+	<view class="content">
+		<textarea placeholder="说点什么吧" name="text">
+</textarea>
+	</view>
+  <!-- 图片展示区 -->
+	<view class="choose-img">
+		<scroll-view scroll-x="true">
+			<view class="scrollX">
+				<view class="img" wx:for="{{images}}" wx:key="{{item.path}}">
+					<image src="{{item.path}}" class="img-item"></image>
+					<image src="/images/publish/delete_image.png" class="img-del" bindtap="deleteImg" data-index="{{index}}"></image>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+
+	<!-- 提交选项 -->
+	<view class="btn">
+		<button class="btn-img" bindtap="chooseImg">选择图片</button>
+		<button class="btn-send" form-type="submit">发布到朋友圈</button>
+	</view>
+</form>

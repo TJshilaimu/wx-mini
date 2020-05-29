@@ -1,0 +1,44 @@
+<view class="content" wx:for="{{myShow}}" data-info="{{item._id}}">
+	<view class="con-top">
+		<view class="con-img">
+			<image src="{{item.user.avatarUrl}}"></image>
+		</view>
+		<view class="con-user">
+			<view class="con-name">{{item.user.nickName}}</view>
+			<view class="con-time">{{item.time}}</view>
+		</view>
+		<button bindtap="reply" class="con-reply">回复</button>
+	</view>
+	<view class="speak">
+		<view class="speak-text">
+			{{item.text}}
+		</view>
+		<scroll-view scroll-x>
+			<view class="speak-img">
+				<block wx:for="{{item.images}}">
+					<image src="{{item.path}}" bindtap="show" data-index="{{index}}">
+					</image>
+				</block>
+			</view>
+		</scroll-view>
+	</view>
+	<view class="commit">
+		<view wx:for="{{re}}">{{index}}评论：{{item.commit}}</view>
+	</view>
+
+
+	<view>
+		<!-- <view class="like" hidden="{{!flag}}" bindtap='like'> -->
+		<view class="like" wx:if="{{flag}}" bindtouchstart="like">
+
+			<image src="/images/topic-detail/unlike.png"></image>
+			<text>喜欢</text>
+		</view>
+		<!-- <view class="like" hidden="{{flag}}" bindtap='like'> -->
+		<view class="like" wx:else bindtouchstart='like'>
+
+			<image src="/images/topic-detail/like.png"></image>
+			<text>已喜欢</text>
+		</view>
+	</view>
+</view>

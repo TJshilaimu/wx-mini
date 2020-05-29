@@ -1,0 +1,16 @@
+textarea{
+  width:98%;
+  height:600rpx;
+  /* border:1rpx solid red; */
+  padding:4rpx;
+  line-height: 40rpx;
+  background-color: #fff;
+  margin:0 auto;
+}
+button{
+  width:80%;
+  position: fixed;
+  bottom:120rpx;
+  left:50%;
+  transform:translateX(-50%)
+}

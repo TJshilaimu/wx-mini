@@ -1,0 +1,5 @@
+<form bindsubmit="sendCommit">
+	<textarea placeholder="请输入评论" name="commit"></textarea>
+	<button form-type="submit" type="primary">发送神评</button>
+
+</form>

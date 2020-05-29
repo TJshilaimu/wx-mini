@@ -1,0 +1,5 @@
+<form bindsubmit="send">
+<textarea placeholder="shuru" name='text'></textarea>
+<button form-type="submit" type="warning">提交</button>
+
+</form>

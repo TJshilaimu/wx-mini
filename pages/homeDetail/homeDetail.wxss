@@ -1,0 +1,77 @@
+/* pages/homeDetail/homeDetail.wxss */.content{
+  display: flex;
+  flex-direction: column;
+}
+.con-top{
+  margin-top:30rpx;
+  position: relative;
+  width:100%;
+  height:130rpx;
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.con-img{
+  width:100rpx;
+  height:100rpx;
+  margin-left:20rpx;
+  margin-right:30rpx;
+}
+.con-img image{
+  width: 100%;
+  height:100%;
+  border-radius: 50%;
+}
+.con-name{
+  font-size:50rpx;
+  font-weight: bold;
+}
+.con-time{
+  color:#888;
+  font-size:30rpx;
+}
+.speak{
+  margin: 20rpx auto;
+  width:80%;
+  /* background-color: brown; */
+}
+.speak-img{
+width:100%;
+white-space: nowrap;
+}
+.speak-text{
+  padding:20rpx;
+}
+.speak-img image{
+  margin-left:30rpx;
+  width:200rpx;
+  height:200rpx;
+}
+.con-reply{
+  width:160rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  position:fixed;
+  top:10rpx;
+  right:20rpx;
+  font-size: 36rpx;
+}
+
+.like{
+  /* margin-top:300rpx; */
+  position: fixed;
+  bottom: 12rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.like image{
+  width:80rpx;
+  height:80rpx;
+}
+.commit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

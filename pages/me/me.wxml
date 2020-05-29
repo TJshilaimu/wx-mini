@@ -1,0 +1,49 @@
+<view class="me-top">
+	<view class="me-img">
+		<open-data type="userAvatarUrl"></open-data>
+	</view>
+	<view class="me-info">
+		<view class="me-name">
+			<open-data type="userNickName"></open-data>
+		</view>
+		<view class="me-address">
+			<open-data type="userCountry"></open-data> ·
+			<open-data type="userProvince"></open-data> ·
+			<open-data type="userCity"></open-data>
+		</view>
+	</view>
+</view>
+
+<view class="listItem">
+	<view class="white"></view>
+	<view class="item" bindtap="listEvent">
+		<image src="/images/me/collect.png"></image>
+		<view class="item-text">收藏列表</view>
+		<view class="item-icon">></view>
+	</view>
+</view>
+
+<view class="listItem" bindtap="history">
+	<view class="line"></view>
+	<view class="item">
+		<image src="/images/me/history.png"></image>
+		<view class="item-text">发布历史</view>
+		<view class="item-icon">></view>
+	</view>
+</view>
+<view class="listItem">
+	<view class="white"></view>
+	<view class="item" bindtap="invite">
+		<image src="/images/me/invitation.png"></image>
+		<view class="item-text">我的好友</view>
+		<view class="item-icon">邀请好友</view>
+	</view>
+</view>
+<view class="listItem">
+	<view class="line"></view>
+	<view class="item" bindtap="advance">
+		<image src="/images/me/advice.png"></image>
+		<view class="item-text">产品意见</view>
+		<view class="item-icon">></view>
+	</view>
+</view>
